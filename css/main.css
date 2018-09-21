@@ -1,0 +1,294 @@
+/*
+*   atribuindo valores base
+*
+*/
+
+  body, html 
+  {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  body 
+  {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #424242;
+  }
+  
+  h1, h2, h3, h4, h5 
+  {
+    margin: 0; 
+  }
+  
+  header, nav, footer, section, article, div 
+  {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  
+  ul 
+  {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  table 
+  {
+    border-spacing: 0px;
+  }
+  
+  /*
+   *
+   * Header
+   *
+   */
+  
+  .header 
+  {
+    display: flex;
+    min-height: 56px;
+    transition: min-height 0.3s;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 3px solid #7d97ad;
+  }
+  
+  .header-inner 
+  {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .header-table 
+  {
+    float: right;
+  }
+  
+  .header-logo 
+  {
+    height: 72px;
+    margin-right: 1em;
+    vertical-align: top;
+    margin-top: 12px;
+  }
+  
+  .header-title 
+  {
+    font-weight: 300;
+    font-size: 4em;
+    margin-top: 0.2em;
+    display: block;
+    color: #212121;
+  }
+
+  .header-subtitle 
+  {
+    display: inline-flex;
+    font-weight: normal;
+    font-size: 2em;
+    display: block;
+    float: right;
+    color: #212121;
+  }
+  
+  /*
+   *
+   * Main
+   *
+   */
+  
+  main 
+  {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  
+  /*
+   *
+   * Hero
+   *
+   */
+  
+  .hero 
+  {
+    display: block;
+    position: relative;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    height: 300px;
+  }
+  
+  .hero article 
+  {
+    box-sizing: border-box;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  /*
+   *
+   * Projects
+   *
+   */
+  
+  .header-project
+  {
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0.5em 0.25em;
+    display: inline-block;
+    color: #7d97ad;
+  }
+
+  .project-container
+  {
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-box
+  {
+    padding: 10px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .project-box .label-box 
+  {
+    padding: 10px;
+    font-weight: normal;
+  }
+
+  .image-box
+  {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .image-box h2
+  {
+    font-weight: normal;
+  }
+  
+  /*
+   *
+   * Footer
+   *
+   */
+  
+  footer 
+  {
+    border-top: 1px solid #E0E0E0;
+    height: 80px;
+  }
+
+  footer a 
+  {
+    text-decoration: none;
+    color: #333;
+  }
+
+  footer ul
+  {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  footer li 
+  {
+    display: inline-block;
+    margin: 0 2em;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  footer li:hover 
+  {
+    text-decoration: underline;
+  }
+  
+/**
+*
+* Media Query Session
+*
+**/
+
+  @media screen and (max-width: 541px) and (orientation:portrait)
+  {
+    .header-title 
+    {
+      text-align: right;
+      font-weight: 300;
+      font-size: 2.8em;
+      margin-top: 0.2em;
+      display: block;
+      color: #212121;
+    }
+  }
+
+  @media screen and (max-width: 432px) and (orientation:portrait)
+  {
+
+    footer 
+    {
+      border-top: 1px solid #E0E0E0;
+      padding: 1em;
+      height: 50px;
+    }
+  
+    footer ul
+    {
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    footer a 
+    {
+      text-decoration: none;
+      color: #333;
+    }
+    
+    footer li 
+    {
+      display: inline-block;
+      margin: 0 0.5em;
+      font-size: 12px;
+    }
+
+    .hero
+    {
+      height: 360px;
+    }
+
+    .header-title 
+    {
+      text-align: right;
+      font-weight: 300;
+      font-size: 2.4em;
+      margin-top: 0.2em;
+      display: block;
+      color: #212121;
+    }
+  }
+  
